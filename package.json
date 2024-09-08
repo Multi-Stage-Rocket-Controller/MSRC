@@ -1,0 +1,20 @@
+{
+  "name": "msrc",
+  "version": "0.0.1",
+  "description": "Senior Capstone Project Frontend",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Multi-Stage-Rocket-Controller/MSRC.git"
+  },
+  "author": "Matthew Sherrill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Multi-Stage-Rocket-Controller/MSRC/issues"
+  },
+  "homepage": "https://github.com/Multi-Stage-Rocket-Controller/MSRC#readme"
+}
