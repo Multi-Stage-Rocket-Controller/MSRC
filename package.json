@@ -5,7 +5,8 @@
   "main": "src/main.js",
   "scripts": {
     "test": "test",
-    "start": "electron ."
+    "start": "electron .",
+    "trace": "electron --trace-warnings ."
   },
   "repository": {
     "type": "git",
