@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Multi-Stage-Rocket-Controller/MSRC#readme",
   "devDependencies": {
     "electron": "^32.1.0"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
