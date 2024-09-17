@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require("path");
 
 const createWindow = () => {
-  const nonce = Math.random().toString(36).substr(2, 15); // Generate a random nonce
   const win = new BrowserWindow({
     width: 1800,
     height: 1600,
@@ -14,7 +13,6 @@ const createWindow = () => {
     },
   });
 
-  // Load HTML file
   win.loadFile(path.join(__dirname, "main.html"));
 };
 
