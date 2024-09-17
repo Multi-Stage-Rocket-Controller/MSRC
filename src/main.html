@@ -7,17 +7,13 @@
     <title>Multi-Stage Rocket Controller</title>
   </head>
   <body>
-    <div id="particles-js">
-    </div>
-
-    <!-- Correct the script path and load particles.js -->
+    <!-- particles.js loading for background -->
+    <div id="particles-js"></div>
     <script src="../node_modules/particles.js/particles.js"></script>
-
-    <!-- Call particlesJS.load() after particles.js is fully loaded -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        particlesJS.load('particles-js', './particles.json', function() {
-          console.log('callback - particles.js config loaded');
+      document.addEventListener("DOMContentLoaded", function () {
+        particlesJS.load("particles-js", "./particles.json", function () {
+          console.log("callback - particles.js config loaded");
         });
       });
     </script>
