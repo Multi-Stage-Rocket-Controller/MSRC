@@ -1,17 +1,17 @@
 /* Make sure the body and html take up the full viewport */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  /* The particles container should take up the entire page */
-  #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #000; /* Optional: add a background color */
-  }
-  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* The particles container should take up the entire page */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Optional: add a background color */
+}

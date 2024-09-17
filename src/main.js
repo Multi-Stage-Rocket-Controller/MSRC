@@ -5,12 +5,13 @@ const path = require('path');
 const createWindow = () => {
   const nonce = Math.random().toString(36).substr(2, 15); // Generate a random nonce
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1800,
+    height: 1600,
     icon: __dirname + './img/rocket_icon.png', 
     webPreferences: {
-      nodeIntegration: false,
-      contextIsolation: true, // Set context isolation for security
+      webSecurity: false,
+      // nodeIntegration: false,
+      // contextIsolation: true,
     },
   });
 
