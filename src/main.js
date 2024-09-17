@@ -7,6 +7,7 @@ const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: __dirname + './img/rocket_icon.png', 
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true, // Set context isolation for security
@@ -14,19 +15,7 @@ const createWindow = () => {
   });
 
   // Load HTML file
-  win.loadFile(path.join(__dirname, 'main.html')).then(() => {
-    // Inject the nonce into the script tag dynamically
-    win.webContents.executeJavaScript(`
-      const scriptTag = document.createElement('script');
-      scriptTag.nonce = '${nonce}';
-      scriptTag.text = \`
-        particlesJS.load('particles-js', 'particles.json', function() {
-          console.log('callback - particles.js config loaded');
-        });
-      \`;
-      document.body.appendChild(scriptTag);
-    `);
-  });
+  win.loadFile(path.join(__dirname, 'main.html'))
 };
 
 app.whenReady().then(createWindow);
