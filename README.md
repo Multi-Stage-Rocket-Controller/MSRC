@@ -1,5 +1,8 @@
 # MSRC
 
+> [!WARNING]
+> A reminder that this is only designed to run as a web or Windows machine. This is NOT made for OSX/Ubuntu
+
 ## Install Procedures
 
 First, you will need to install the electron and its dependencies. To do that:
