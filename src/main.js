@@ -6,7 +6,7 @@ const createWindow = () => {
   const win = new BrowserWindow({
     width: 1800,
     height: 1600,
-    icon: __dirname + "./img/rocket_icon.png",
+    icon: __dirname + "./assets/img/rocket_icon.png", // PATH from src folder
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
