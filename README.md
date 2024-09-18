@@ -3,7 +3,7 @@
 
 ## Install Procedures
 > [!WARNING]
-> A reminder that this is only designed to run as a web or Windows machine. This is NOT made for OSX/Ubuntu
+> A reminder that this is only designed to run as a web or Windows machine. This is NOT designed for OSX/Ubuntu. This may may have major bugs and/or be a completely unusable software. 
 
 First, you will need to install the electron and its dependencies. To do that:
 ```
