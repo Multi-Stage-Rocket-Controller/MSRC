@@ -2,7 +2,7 @@
   "name": "msrc",
   "version": "0.0.1",
   "description": "Senior Capstone Project Frontend",
-  "main": "src/main.js",
+  "main": "src/views/main/main.js",
   "scripts": {
     "test": "test",
     "start": "electron .",
