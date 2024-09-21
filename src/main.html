@@ -8,6 +8,7 @@
         color: white;
         border: 2px solid #aa9c04;
         text-align: center;
+        width: 100px;
       }
       .buttonNew {
         border-radius: 12px;
@@ -15,31 +16,28 @@
         color: white;
         border: 2px solid #aa0404;
         text-align: center;
+        width: 100px;
       }
-      .container {
-        height: 200px;
-        position: relative;
+      .btnContainer {
+        display: flex;
+        justify-content: center;
+        padding: 8px;
       }
-
-      .center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+      .titleContainer {
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="center">
+    <div class="splashScreen">
+      <div class="titleContainer">
         <h1>Rocket Visualizer</h1>
       </div>
-    </div>
-    <div class="container">
-      <div class="center">
+      <div class="btnContainer">
         <button class="buttonNew">New</button>
+      </div>
+      <div class="btnContainer">
         <button class="buttonLoad" onclick="promptFile()">Load</button>
       </div>
     </div>
