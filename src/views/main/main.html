@@ -4,18 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Security-Policy" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Multi-Stage Rocket Controller</title>
   </head>
   <body>
     <!-- particles.js loading for background -->
-    <div id="particles-js"></div>
+    <div id="particles-js">
+      <div class="titleContainer">
+        <h1>Rocket Visualizer</h1>
+      </div>
+      <div class="btnContainer">
+        <button class="buttonNew">New</button>
+      </div>
+      <div class="btnContainer">
+        <button class="buttonLoad" onclick="promptFile()">Load</button>
+    </div>
     <script src="../../../node_modules/particles.js/particles.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        particlesJS.load("particles-js", "../../assets/particles.json", function () {
-          console.log("callback - particles.js config loaded");
-        });
+        particlesJS.load(
+          "particles-js",
+          "../../assets/particles.json",
+          function () {
+            console.log("callback - particles.js config loaded");
+          }
+        );
       });
     </script>
   </body>
 </html>
+
+<script>
+  function promptFile() {
+    let input = document.createElement("input");
+    input.type = "file";
+    input.onchange = (_) => {
+      let files = Array.from(input.files);
+      console.log(files);
+    };
+    input.click();
+  }
+</script>
