@@ -1,0 +1,44 @@
+.buttonLoad {
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  border: 2px solid #aa9c04;
+  text-align: center;
+  width: 100px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.buttonNew {
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  border: 2px solid #aa0404;
+  text-align: center;
+  width: 100px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.splashScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
